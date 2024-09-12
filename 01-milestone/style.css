@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 150px;
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: #9761f5;
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid #6a0dad; /* Changed to purple */
+}
+
+.profile-picture {
+    width: 150px;
+    height: auto;
+    margin-top: 0%;
+    border-radius: 50%;
+    border: 5px solid #6a0dad; /* Changed to purple */
+    margin-bottom: 20px;
+
+    max-width: 150px;  
+    max-height: 150px; 
+    width: auto;       
+    height: auto;      
+    object-fit: cover;  
+}
+
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #6a0dad; /* Changed to purple */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: #6a0dad; /* Added background color */
+    color: white; /* Text color */
+}
+
+button:hover {
+    background-color: #9a2ed4; /* Lighter purple on hover */
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px; /* Reduced padding for mobile */
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column; /* Stack elements on smaller screens */
+    background-color: white;
+    width: 100%; /* Full width on mobile */
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-section, .right-section {
+    width: 100%; /* Full width on mobile */
+}
+
+/* Responsive Images */
+.profile-picture {
+    width: 150px; /* Fixed width */
+    height: 180px; /* Increased height for elongation */
+    margin-top: 10%;
+    border-radius: 50%; /* Keep it circular */
+    border: 5px solid #6a0dad; /* Purple border */
+    margin-bottom: 20px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .resume-container {
+        flex-direction: row; /* Side by side on larger screens */
+    }
+    .left-section {
+        width: 35%;
+    }
+    .right-section {
+        width: 65%;
+    }
+    .profile-picture {
+        width: 150px; /* Original size for larger screens */
+        height: 150px;
+    }
+}
